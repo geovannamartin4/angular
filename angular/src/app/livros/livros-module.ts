@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,6 +10,6 @@ import { Listagem } from './listagem/listagem';
 
 @NgModule({
   declarations: [Cadastro, Listagem],
-  imports: [CommonModule, LivrosRoutingModule],
+  imports: [CommonModule, LivrosRoutingModule, FormsModule],
 })
 export class LivrosModule {}
