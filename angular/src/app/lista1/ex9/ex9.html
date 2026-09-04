@@ -1,0 +1,6 @@
+
+    <p>Teclado</p>
+    <h1>Estoque</h1>
+    <button (click)="aumentar()">+</button>
+    <button (click)="diminuir()" [disabled]="quantidade === 0">-</button>
+    <h1>Quantidade: {{quantidade}}</h1>

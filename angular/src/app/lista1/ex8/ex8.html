@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 8</title>
-</head>
-<body>
-   <label>Produto:</label>
+<label>Produto:</label>
 <input type="text" [(ngModel)]="produto">
 
 <label>Preço:</label>
@@ -21,6 +13,4 @@
 
 <p>Quantidade: {{ quantidade }}</p>
 
-<h1>Total: {{ total | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</h2>
-</body>
-</html>
+<h1>Total: {{ total | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</h1>
