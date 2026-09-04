@@ -1,0 +1,15 @@
+<h1>{{ produto }}</h1>
+
+<p>Preço: {{preco | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</p>
+
+<label>Quantidade:</label>
+
+<button (click)="diminuir()" [disabled]="quantidade === 1"></button>
+
+{{ quantidade }}
+
+<button (click)="aumentar()">+</button>
+
+<p>Total: {{ total | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</p>
+<button (click)="adicionar()">Adicionar ao carrinho</button>
+<h2>{{ mensagem }}</h2>
