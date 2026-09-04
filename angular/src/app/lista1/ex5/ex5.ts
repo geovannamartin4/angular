@@ -10,6 +10,6 @@ export class Ex5 {
   curtidas = 0;
 
   curtir(){
-    console.log("teste");
+   this.curtidas++;
   }
 }
