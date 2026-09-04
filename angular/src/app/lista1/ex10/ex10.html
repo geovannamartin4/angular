@@ -1,0 +1,8 @@
+<label for="">Usuário:</label>
+<input type="text" placeholder="Digite seu usuário" [(ngModel)]="usuario">
+<label for="">Senha</label>
+<input type="text" placeholder="Digite sua senha" [(ngModel)]="senha">
+
+<button (click)="entrar()" [disabled]="usuario === '' || senha === ''">Entrar</button>
+
+<h2>{{mensagem}}</h2>
